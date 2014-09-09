@@ -26,15 +26,18 @@ Now you can run your first Robot Framework test case from Heroku with:
 ## File explanation
 
 * bin/test 
+  
   Script to run the tests. Sets paths for Phantomjs and possible Robot
   libraries. Calls Robot with phantomjs as the browser to run the
   default test case from RobotTests.
 
 * RobotTests 
+  
   Example Robot Framework test project. Use this as a starting point
   for your first test.
 
 * requirements.txt 
+  
   Required by Heroku. This defines the necessary Python libraries
   required by your Heroku app. Specifically Robot Framework and
   Selenium2 libraried needed for running web tests with Robot
@@ -44,9 +47,11 @@ Now you can run your first Robot Framework test case from Heroku with:
   you project.
 
 * Procfile 
+  
   Defines a Heroku process type, in this case the tests to run using
   Robot Framework.
 
 * .buildpacks
+  
   Which buildpacks need to be use to run the tests with Robot
   Framework. Currently Phantomjs and Python.
