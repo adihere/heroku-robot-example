@@ -3,12 +3,8 @@ heroku-robot-example
 
 An example project that shows how to run Robot Framework tests on Heroku
 
-Using Robot Framework on Heroku
-===============================
+## Setting up
 
-
-Setting up
-==========
 
 Clone the content of this repository to your Heroku app's repository.
 
@@ -29,27 +25,34 @@ from Heroku.
 `heroku run tests`
 
 
-The Details
-===========
+## File explanation
 
-bin/test - script to run the tests. Sets paths for Phantomjs and
-	   possible Robot libraries. Calls Robot with phantomjs as
-	   browser and the default test case as parameter.
+* bin/test 
 
-RobotTests - Example Robot Framework test project. You can start with
-	     modifying this for your first test.
+  Script to run the tests. Sets paths for Phantomjs and possible Robot
+  libraries. Calls Robot with phantomjs as browser and the default
+  test case as parameter.
 
-requirements.txt - required by Heroku. This defines the necessary
-		   Python libraries required by your Heroku
-		   app. Specifically Robot Framework and Selenium2
-		   libraried needed for running web tests with Robot
-		   Framework.
 
-		   You'll probably want to at least update the
-		   versions of these for you project.
+* RobotTests
 
-Procfile - Defines a Heroku process type, in this case the tests to
-	   run using Robot Framework.
+  Example Robot Framework test project. You can start with modifying
+  this for your first test.
+
+* requirements.txt 
+
+  Required by Heroku. This defines the necessary Python libraries
+  required by your Heroku app. Specifically Robot Framework and
+  Selenium2 libraried needed for running web tests with Robot
+  Framework.
+
+  You'll probably want to at least update the versions of these for
+  you project.
+
+* Procfile 
+
+  Defines a Heroku process type, in this case the tests to run using
+  Robot Framework.
 
 
 		   
