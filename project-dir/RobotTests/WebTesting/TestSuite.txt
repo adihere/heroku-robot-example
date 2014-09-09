@@ -1,0 +1,15 @@
+*** Settings ***
+Documentation     Sample test suite project with one test suite and one test case.
+...
+...               Contains also two scalar variables for default web page and browser to use.
+Library           Selenium2Library
+
+*** Variables ***
+${browser}        ff    # Web browser to use for testing. Can be overriden from command line.
+${web-page}       https://github.com    # Web page to open for testing.
+
+*** Test Cases ***
+TestCase
+    [Setup]    Open Browser	${web-page}    browser=${browser}
+    Page Should Contain    Why you’ll love GitHub.
+    [Teardown]    Close Browser
