@@ -30,7 +30,7 @@ If you want the log file from your test to be uploaded to your Amazon S3 bucket 
 
 For example:
 
-`heroku config:set S3_URL=http://AKIERTHTHBSLAKBQ:CgYPrOliulhwer4598FsDfGoiuhrt56werRcOq+w@s3-eu-west-1.amazonaws.com/my-test-logs`
+`heroku config:set S3_URL=http://MAXERTHTHBSLAKBQ:FWw2rTwer4598FsDfGoiuhrt56werRcOq-e@s3-eu-west-1.amazonaws.com/my-test-logs`
 
 ## File explanation
 
