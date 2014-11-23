@@ -24,7 +24,11 @@ Now you can run your first Robot Framework test case from Heroku with:
 
 ### Setting up Amazon S3 uploads
 
-If you want the log file from your test to be uploaded to your Amazon S3 bucket just set the S3_URL env var. For example:
+If you want the log file from your test to be uploaded to your Amazon S3 bucket just set the S3_URL env var. The URL format is 
+
+`http://<ACCESS_KEY>:<SECRET_KEY>@<END_POINT>/<BUCKET_NAME>`
+
+For example:
 
 `heroku config:set S3_URL=http://AKIERTHTHBSLAKBQ:CgYPrOliulhwer4598FSDFGoiuhrt56werRcOq+w@s3-eu-west-1.amazonaws.com/my-test-logs`
 
