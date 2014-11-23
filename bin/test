@@ -14,5 +14,7 @@ set | grep PATH
 pybot --variable browser:phantomjs RobotTests/WebTesting/TestSuite.txt
 
 # uncomment the following lines to enable uploading result to Amazon S3
-# cp log.html log-$(date +%Y%m%d%H%M%S).html
-# ./s3upload.py log.html
+#log_file=log-$(date +%Y%m%d%H%M%S).html
+#cp log.html $log_file
+#bin/s3upload.py $log_file
+#rm $log_file
