@@ -6,10 +6,10 @@ Library           Selenium2Library
 
 *** Variables ***
 ${browser}        ff    # Web browser to use for testing. Can be overriden from command line.
-${web-page}       https://github.com    # Web page to open for testing.
+${web-page}       http://google.com    # Web page to open for testing.
 
 *** Test Cases ***
 TestCase
     [Setup]    Open Browser	${web-page}    browser=${browser}
-    Wait Until Page Contains    GitHub     15
+    Wait Until Page Contains    Google     15
     [Teardown]    Close Browser
