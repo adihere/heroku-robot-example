@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-
 # set phantomjs to PATH
 echo "Setting HEROKU environment for phantomjs binary: "
 export PATH="$PATH:$HOME/vendor/phantomjs/bin/"
@@ -14,3 +13,6 @@ set | grep PATH
 
 pybot --variable browser:phantomjs RobotTests/WebTesting/TestSuite.txt
 
+# uncomment following lines to enable uploading result to Amazon S3
+# cp log.html log-$(date +%Y%m%d%H%M%S).html
+# ./s3upload.py log.html
