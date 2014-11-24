@@ -64,3 +64,7 @@ For example:
   
   Which buildpacks need to be use to run the tests with Robot
   Framework. Currently Phantomjs and Python.
+
+## Authors
+
+Original example created by Niko Cankar, S3 upload contributed by Tuomas Tammi.
