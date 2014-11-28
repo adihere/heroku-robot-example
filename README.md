@@ -9,7 +9,7 @@ Clone the content of this repository to your Heroku app's repository.
 
 Configure your Heroku app to use an external buildpack.
 
-`heroku config:add BUILDPACK_URL=http://hello.heroku.com/e/36622/oku-heroku-buildpack-multi-git/2rc718/432677817`
+`heroku config:add BUILDPACK_URL=https://github.com/ddollar/heroku-buildpack-multi.git`
 
 This allows you to use separate buildpacks for running your app (==
 Robot Framework test execution). The used builpacks are listed in the
